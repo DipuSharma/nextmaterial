@@ -4,16 +4,19 @@ import Image from 'next/image';
 export default function Item({ item }) {
     return (
         <Paper>
-            <Image src={item.imageUrl} alt={item.title} style={{ width: "100%", height: "60vh" }} />
+            <div className='slider-container'>
+                <Image src={item.imageUrl} alt={item.title} fill
+                    sizes="(max-width: 768px) 30vw,
+              (max-width: 1200px) 60vw,
+              60vw"/>
 
-            <div className='descriptions' style={{ display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
-                <h2>{item.body}</h2>
-                <Button className="CheckButton" variant='contained'>
-                    Check it out!
-                </Button>
+                <div className='descriptions' style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+                    <h2 className='slider-text'>{item.body}</h2>
+                    <Button className="check-button" variant='contained'>
+                        Check it out!
+                    </Button>
+                </div>
             </div>
-
-
         </Paper>
     )
 }

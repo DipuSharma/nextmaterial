@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
+  images : {
+    domains : ['localhost:8000','127.0.0.1:8000', '0.0.0.0', 'res.cloudinary.com'] // <== Domain name
+  }
 }
 
 module.exports = nextConfig
