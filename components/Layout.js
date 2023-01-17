@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
 //   const showHeader = router.pathname === '/admin' ? false : true;
   return (
     <>
-      <Navbar />
+      <Navbar/>
         {children}
       <Footer />
     </>

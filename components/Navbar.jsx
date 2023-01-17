@@ -48,12 +48,14 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar
+      position="sticky"
+      sx={{color:"black", backgroundColor:"White" }}
+      >
       <CssBaseline />
       <Toolbar>
         <Typography variant="h4" >
           Navbar
-
         </Typography>
         {isMobile ? (
           <DrawerComponent />
@@ -89,7 +91,7 @@ function Navbar() {
               <Link onClick={handleClose} href={'/src/profile'}><Typography sx={{ minWidth: 150, padding: 1 }}>My Account</Typography></Link>
               <Button onClick={handleClose} startIcon={<Logout />} sx={{ minWidth: 150, padding: 1 }}>Logout</Button>
             </Menu>
-            </>
+          </>
         )}
       </Toolbar>
     </AppBar>

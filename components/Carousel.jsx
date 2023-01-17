@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
-import Item from './Item';
+import Item from './Slider';
 import slider from '../public/Items.json'
 
 export default function Example() {

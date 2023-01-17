@@ -33,6 +33,21 @@ a {
   width: 100%;
   position: relative;
 }
+@media screen and (max-width: 800px) {
+  .slider-container{
+    height: 40vh;
+    width: 100%;
+    position: relative;
+  }
+}
+@media screen and (max-width: 500px) {
+  .slider-container{
+    height: 30vh;
+    width: 100%;
+    position: relative;
+  }
+}
+
 .check-button{
   margin-top: 20%;
 }
@@ -42,14 +57,14 @@ a {
   margin-top: 30%;
   color: white;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .check-button{
-    margin-top: 80%;
+    margin-top: 50%;
   }
   .slider-text{
     z-index: 1;
     position: absolute;
-    margin-top: 100%;
+    margin-top: 30%;
     color: white;
   }
 }
