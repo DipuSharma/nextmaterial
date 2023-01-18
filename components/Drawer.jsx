@@ -87,7 +87,7 @@ export default function DrawerComponent() {
             </Drawer>
             <IconButton
                 onClick={() => setOpenDrawer(!openDrawer)}
-                sx={{ ml: 25, ...(open && { display: 'none' }) }}
+                sx={{ ml: 40, ...(open && { display: 'none' }) }}
                 edge="start"
             >
                 <MenuIcon />
