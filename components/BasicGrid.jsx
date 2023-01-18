@@ -10,18 +10,16 @@ import {
     CardActions,
     Button,
     Box,
-    IconButton,
     CardMedia,
-    Divider,
-    Toolbar
 } from "@mui/material";
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
 import { Favorite, StarRate } from '@mui/icons-material';
 import { green, pink } from '@mui/material/colors';
+import StarRateIcon from '@mui/icons-material/StarRate';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import LocalMallIcon from '@mui/icons-material/LocalMall';
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -45,6 +43,9 @@ export default function BasicGrid() {
                                 alt="Paella dish"
                                 sx={{}}
                             />
+                            <CardContent>
+
+                            </CardContent>
                             <CardContent sx={{ display: "flex" }}>
                                 <RadioGroup
                                     row
@@ -77,10 +78,9 @@ export default function BasicGrid() {
                                 </RadioGroup>
                             </CardContent>
                             <CardActions>
-                                <IconButton aria-label="add to favorites">
-                                    <Favorite />
-                                </IconButton>
-                                <Button size="small">Card Button</Button>
+                                <span style={{color:'red', marginLeft:0, position:'relative'}}>4.2</span>
+                                <StarRateIcon size='warning' color='yellow' sx={{flexGrow: '.5'}}/>
+                                <Button size="small"><LocalMallIcon /></Button><Button size="small"><AddShoppingCartIcon /></Button>
                             </CardActions>
                         </Card>
                     </Item>
@@ -96,7 +96,7 @@ export default function BasicGrid() {
                         }}
                             className='card-left'
                         >
-                            <Typography variant='subtitle2'>Monday Happy</Typography>
+                            <Typography variant='caption' sx={{ display: "flex" }}>Monday Happy</Typography>
                             <Typography variant='button' sx={{ color: "red" }}>#MONHPY</Typography>
                         </Card>
                         <Card

@@ -55,7 +55,7 @@ function Navbar() {
       <CssBaseline />
       <Toolbar>
         <Typography variant="h4" >
-          Navbar
+          Dipu
         </Typography>
         {isMobile ? (
           <DrawerComponent />
