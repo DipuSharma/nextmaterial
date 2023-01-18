@@ -29,13 +29,13 @@ a {
   margin-top: 70px;
 }
 .slider-container{
-  height: 60vh;
+  height: 40vh;
   width: 100%;
   position: relative;
 }
 @media screen and (max-width: 800px) {
   .slider-container{
-    height: 40vh;
+    height: 30vh;
     width: 100%;
     position: relative;
   }
@@ -49,22 +49,22 @@ a {
 }
 
 .check-button{
-  margin-top: 20%;
+  margin-top: 12%;
 }
 .slider-text{
   z-index: 1;
   position: absolute;
-  margin-top: 30%;
+  margin-top: 8%;
   color: white;
 }
 @media screen and (max-width: 500px) {
   .check-button{
-    margin-top: 50%;
+    margin-top: 40%;
   }
   .slider-text{
     z-index: 1;
     position: absolute;
-    margin-top: 30%;
+    margin-top: 25%;
     color: white;
   }
 }
@@ -147,6 +147,14 @@ a {
     margin-left: 100px;
     padding: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  }
+  .card-left{
+    border-radius: 5px 0px 0px 5px;
+    padding: 4px 60px 35px 39px !important;
+  }
+  .card-right{
+    border-radius: 0px 5px 5px 0px;
+    padding:13px 19px 28px 15px !important;
   }
 }
 @media screen and (max-width: 500px) {

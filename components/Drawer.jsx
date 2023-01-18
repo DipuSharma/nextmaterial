@@ -46,7 +46,7 @@ export default function DrawerComponent() {
             >
                 <ThemeProvider theme={theme}>
                     <Box >
-                        <Typography variant='h4' onClick={() => setOpenDrawer(false)} sx={{ minWidth: 100, padding: 1 }} >Navbar</Typography>
+                        <Typography variant='h4' onClick={() => setOpenDrawer(false)} sx={{ minWidth: 100, padding: 1 }} >Dipu</Typography>
                         <Divider />
                         <Typography sx={{ minWidth: 150, padding: 1 }} bgcolor="secondary" color="secondary" onClick={() => setOpenDrawer(false)}><Link href={'/'}>Home</Link></Typography>
                         <Divider />
